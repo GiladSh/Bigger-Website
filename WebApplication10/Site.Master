@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication10.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="anoceanofsky.css" />
+<title>גזיבו ביץ' קלאב</title>
+</head>
+
+<body>
+<form id="Form1" runat="server" >
+    <div id="page">
+        <div class="topNaviagationLink"><a href="Default.aspx">Home</a></div>
+        <div class="topNaviagationLink"><a href="login.aspx">Login</a></div>
+        <div class="topNaviagationLink"><a href="SignUp.aspx">Sign Up</a></div>
+        <div class="topNaviagationLink"><a href="Contact.htm">Contact Us</a></div>
+	  
+	</div>
+    <div id="mainPicture">
+    	<div class="picture">
+        	  <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            <div id="headerTitle">גזיבו ביץ' קלאב</div>
+            <div id="headerSubtext">אתר תחרויות הגלישה</div>
+        </div>
+    </div>
+        <div class="contentBox">
+    	<div class="innerBox">
+        	  <asp:ContentPlaceHolder ID="titleOne" runat="server"/>
+           <asp:ContentPlaceHolder ID="contentOne" runat="server"/>
+
+        
+        <div class="contentTitle"></div>
+            <div class="contentText"></div>
+        
+        
+        <div class="contentTitle"></div>
+          <div class="contentText"></div>
+        </div>
+
+    </div>
+        <div id="footer"><a href="http://www.aszx.net">web development</a> by Gilad Shdema</div>
+        </form>
+</body>
+</html>

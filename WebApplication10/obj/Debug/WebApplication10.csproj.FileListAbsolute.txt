@@ -1,0 +1,5 @@
+c:\users\pyroshifter\documents\visual studio 2010\Projects\WebApplication10\WebApplication10\bin\WebApplication10.dll
+c:\users\pyroshifter\documents\visual studio 2010\Projects\WebApplication10\WebApplication10\bin\WebApplication10.pdb
+c:\users\pyroshifter\documents\visual studio 2010\Projects\WebApplication10\WebApplication10\obj\Debug\WebApplication10.dll
+c:\users\pyroshifter\documents\visual studio 2010\Projects\WebApplication10\WebApplication10\obj\Debug\WebApplication10.pdb
+C:\Users\PyroShifter\Documents\Visual Studio 2010\Projects\WebApplication10\WebApplication10\obj\Debug\WebApplication10.csprojResolveAssemblyReference.cache

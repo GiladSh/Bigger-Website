@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+    <title></title>
+    <link href="anoceanofsky.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function Validate() {
+            var z = document.getElementById("Text1").value;
+            var x = document.getElementById("Text2").value;
+            var y = document.getElementById("TextArea1").value;
+            if ((x == null || x == "") && (y != null || y != "") && (z != null || z !="") {
+                alert("You must write your name");
+                location.reload(true);
+            }
+            else if ((y == null || y == "") && (x != null || x != "") && (z != null || z !="")) {
+                alert("You must write a message");
+                location.reload(true);
+            }
+            else if ((z == null || z =="") && (x != null || x != "") && (y != null || y != ""))
+            {
+            alert("You must write your email address");
+            location.reload(true);
+            }
+            else if ((y == null || y == "") && (x == null || x == "")) {
+                alert("You must write your name and a message");
+                location.reload(true);
+            }
+            else {
+                alert("Message sent");
+                location.reload(true);
+            }
+        }
+        
+    </script>
+</head>
+<body>
+ 
+<form id="Form1" runat="server" >
+    <div id="page">
+        <div class="topNaviagationLink"><a href="Default.aspx">Home</a></div>
+        <div class="topNaviagationLink"><a href="login.aspx">Login</a></div>
+        <div class="topNaviagationLink"><a href="SignUp.aspx">Sign Up</a></div>
+        <div class="topNaviagationLink"><a href="Contact.htm">Contact Us</a></div>
+	  
+	</div>
+    <div id="mainPicture">
+    	<div class="picture">
+        	  <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            <div id="headerTitle">גזיבו ביץ' קלאב</div>
+            <div id="headerSubtext">אתר תחרויות הגלישה</div>
+        </div>
+    </div>
+        <div class="contentBox">
+    	<div class="innerBox">
+        
+        
+        <div class="contentTitle"></div>
+            <div class="contentText">Email  <input id="Text1" type="text" />
+  <br />
+  First Name  <input id="Text2" type="text" />
+  <br />
+  Message <br />
+    <textarea id="TextArea1" cols="20" rows="10"></textarea>
+    <br />
+    <input type="submit" value="שלח" onclick="Validate ()"/></div>
+        
+        
+        <div class="contentTitle"></div>
+          <div class="contentText"></div>
+        </div>
+
+    </div>
+        <div id="footer"><a href="http://www.aszx.net">web development</a> by Gilad Shdema</div>
+        </form>
+
+
+</body>
+</html>
+ 
